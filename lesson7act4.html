@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>My Doctor Appoinment</h1>
+<p>Fill the form below to book your appoinment</p>
+<hr>
+ 
+<form action="">
+    <fieldset>
+        <legend>Personal Detail</legend>
+        <label>Your name</label><br>
+        <input type="text"id="name placeholder="Enter your full name"><br><br>
+
+        <label>Patient id</label><br>
+        <input type="password" id="pid" placeholder="Your secret id"><br><br>
+
+        <label>Date of birth</label>
+        <input type="date" id="dob">
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend> Your visit</legend>
+        <label>Choose your Doctor</label>
+        <select name="" id="doctor">
+            <option value="">select a doctor</option>
+            <option value="dr-ray">Doctor. Ray-Generl</option>
+            <option value="dr-lee">Doctor. Lee-Teeth</option>
+            <option value="dr-sam">Doctor. Sam- Eyes</optioon>
+        </select><br><br>
+        
+        <label>Why are you visiting?</label><br>
+        
+        <input type="radio" name="reason" value="fever"> Fever<br>
+        <input type="radio" name="reason" value="cold"> Cold<br>
+        <input type="radio" name="reason" value="checkup"> Checkup<br>
+        <input type="radio" name="reason" value="tooth"> Tooth Ache<br><br>
+
+        <label>Any notes for the doctor?</label><br>
+        <textarea id="notes" rows="3" cols="35" placeholder="e.g. I have had a sore throat for 2 days."></textarea><br>
+    </fieldset>
+    </fieldset>
+    
+    <br>
+    
+    <fieldset>
+        <legend>Preferred Visit Day</legend>
+    
+        <input type="checkbox" value="mon"> Monday<br>
+        <input type="checkbox" value="wed"> Wednesday<br>
+        <input type="checkbox" value="fri"> Friday<br>
+    
+    </fieldset>
+    
+    <br>
+    
+    <input type="submit" value="Book My Appointment">
+</form>
+</body>
+</html>
