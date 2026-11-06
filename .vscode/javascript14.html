@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    
+            font-family: Arial;
+    
+            background-color: #f2f2f2;
+    
+            text-align: center;
+    
+            padding: 50px;
+    
+        }
+    
+        .container {
+    
+            background-color: white;
+    
+            width: 350px;
+    
+            margin: auto;
+    
+            padding: 30px;
+    
+            border-radius: 10px;
+    
+        }
+    
+        input {
+    
+            padding: 10px;
+    
+            width: 80%;
+    
+            margin: 15px;
+    
+        }
+    
+        button {
+    
+            padding: 10px 20px;
+    
+            background-color: blue;
+    
+            color: white;
+    
+            border: none;
+    
+            cursor: pointer;
+    
+        }
+    
+        #result {
+
+            margin-top: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+        <h1>Palindrome Checker</h1>
+    
+        <p>Enter a word to check whether it is a palindrome.</p>
+    
+        <input type="text" id="userInput" placeholder="Enter a word">
+    
+        <br>
+    
+        <button onclick="checkPalindrome()">Check</button>
+    
+        <div id="result"></div>
+    
+    </div>
+    <script>
+        function palindrome(myString) {
+            var input = myString.replace (/[]^A-Z0-9/ig,  "").toLowerCase();
+            var reversedinput = input.split('').reverse('').join('');
+            if (input === reversedinput){
+                document.getElementById("result").innerHTML = myString + " is a palindrome";
+            } else {
+                document.getElementById("result").innerHTML = myString + " is not a palindrome";
+
+            }
+            }
+        function checkPalindrome (){
+            var myString = document.getElementById("userInput").value;
+            palindrome(myString);
+        }
+    </script>
+</body>
+</html>
